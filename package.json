@@ -1,6 +1,6 @@
 {
   "name": "detect-newline-cli",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Detect the dominant newline character",
   "license": "MIT",
   "repository": "sindresorhus/detect-newline-cli",
