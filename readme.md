@@ -1,14 +1,12 @@
-# detect-newline-cli [![Build Status](https://travis-ci.org/sindresorhus/detect-newline-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/detect-newline-cli)
+# detect-newline-cli [![Build Status](https://travis-ci.com/sindresorhus/detect-newline-cli.svg?branch=master)](https://travis-ci.com/sindresorhus/detect-newline-cli)
 
 > Detect the dominant newline character
-
 
 ## Install
 
 ```
 $ npm install --global detect-newline-cli
 ```
-
 
 ## Usage
 
@@ -24,13 +22,7 @@ $ detect-newline --help
     \n
 ```
 
-
 ## Related
 
 - [detect-newline](https://github.com/sindresorhus/detect-newline) - API for this module
 - [detect-indent-cli](https://github.com/sindresorhus/detect-indent-cli) - Detect the indentation of code
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)

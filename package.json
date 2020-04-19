@@ -1,51 +1,49 @@
 {
-  "name": "detect-newline-cli",
-  "version": "1.0.0",
-  "description": "Detect the dominant newline character",
-  "license": "MIT",
-  "repository": "sindresorhus/detect-newline-cli",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "bin": {
-    "detect-newline": "cli.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "cli.js"
-  ],
-  "keywords": [
-    "cli-app",
-    "cli",
-    "newline",
-    "linebreak",
-    "line-break",
-    "line",
-    "lf",
-    "crlf",
-    "eol",
-    "linefeed",
-    "character",
-    "char"
-  ],
-  "dependencies": {
-    "detect-newline": "^2.0.1",
-    "get-stdin": "^5.0.1",
-    "meow": "^3.7.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "execa": "^0.2.2",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "detect-newline-cli",
+	"version": "1.0.0",
+	"description": "Detect the dominant newline character",
+	"license": "MIT",
+	"repository": "sindresorhus/detect-newline-cli",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"bin": {
+		"detect-newline": "cli.js"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"newline",
+		"linebreak",
+		"line-break",
+		"line",
+		"lf",
+		"crlf",
+		"eol",
+		"linefeed",
+		"character",
+		"char"
+	],
+	"dependencies": {
+		"detect-newline": "^3.1.0",
+		"get-stdin": "^7.0.0",
+		"meow": "^6.1.0"
+	},
+	"devDependencies": {
+		"ava": "^2.0.0",
+		"execa": "^4.0.0",
+		"xo": "^0.29.1"
+	}
 }
