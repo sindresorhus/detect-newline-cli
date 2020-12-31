@@ -1,4 +1,4 @@
-# detect-newline-cli [![Build Status](https://travis-ci.com/sindresorhus/detect-newline-cli.svg?branch=master)](https://travis-ci.com/sindresorhus/detect-newline-cli)
+# detect-newline-cli
 
 > Detect the dominant newline character
 
