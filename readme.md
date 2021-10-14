@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global detect-newline-cli
+```sh
+npm install --global detect-newline-cli
 ```
 
 ## Usage

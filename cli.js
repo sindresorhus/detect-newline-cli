@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const getStdin = require('get-stdin');
-const fn = require('detect-newline');
+import process from 'node:process';
+import meow from 'meow';
+import getStdin from 'get-stdin';
+import {detectNewlineGraceful} from 'detect-newline';
 
 const cli = meow(`
 	Usage
@@ -12,20 +12,22 @@ const cli = meow(`
 	Example
 	  $ detect-newline "$(printf 'Unicorns\\nRainbows')"
 	  \n
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
 function init(data) {
-	process.stdout.write(fn(data));
-}
-
-if (!input && process.stdin.isTTY) {
-	console.error('Specify a string');
-	process.exit(1);
+	process.stdout.write(detectNewlineGraceful(data));
 }
 
 (async () => {
+	if (!input && process.stdin.isTTY) {
+		console.error('Specify a string');
+		process.exitCode = 1;
+	}
+
 	if (input) {
 		init(input);
 	} else {
